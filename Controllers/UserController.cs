@@ -46,7 +46,7 @@ namespace Controllers
         public async Task<ActionResult<List<UserResponseDto>>> Get()
         {
             var users = await _service.Get();
-            return Ok(new ApiResponse<List<UserResponseDto>>(users, "Список категорий"));
+            return Ok(new ApiResponse<List<UserResponseDto>>(users, "Список пользователей"));
         }
     }
 

@@ -46,7 +46,7 @@ namespace Controllers
         public async Task<IActionResult> Update(Guid Id, CategoryRequestDto categoryRequest)
         {
             var categories = await _service.Update(Id, categoryRequest);
-            return Ok(new ApiResponse<CategoryResponseDto>(categories, "Категория ищменена"));
+            return Ok(new ApiResponse<CategoryResponseDto>(categories, "Категория изменена"));
         }
     }
 }
